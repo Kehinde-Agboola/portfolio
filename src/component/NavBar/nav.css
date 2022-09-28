@@ -1,0 +1,128 @@
+nav {
+  color: white;
+  background-color: black;
+}
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+  color: white;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  top: 1.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: linear-gradient(to right, hsl(39, 100%, 50%), #ffa600);
+  height: 0.2rem;
+  opacity: 0;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+nav.stroke ul a:hover {
+  color: #ffa600;
+}
+
+nav ul li a,
+nav ul li a::after,
+nav ul li a::before {
+  transition: all 0.5s;
+}
+
+li.active a::after,
+a:hover:before {
+  visibility: visible;
+  translate: transform scaleX(1);
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+  color: white;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  top: 1.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: linear-gradient(to right, hsl(39, 100%, 50%), #ffa600);
+  height: 0.2rem;
+  opacity: 0;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+nav.stroke ul a:hover {
+  color: #ffa600;
+}
+
+nav ul li a,
+nav ul li a::after,
+nav ul li a::before {
+  transition: all 0.5s;
+}
+
+li.active a::after,
+a:hover:before {
+  visibility: visible;
+  translate: transform scaleX(1);
+}
+
+/* Header */
+/* header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  flex-flow: column;
+  width: 20rem;
+  text-align: center;
+} */
+
+/* header .logo {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+header .navbar a {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  margin: 2rem 0;
+} */
+/* 
+header .navbar a:hover {
+  letter-spacing: 0.2rem;
+  color: var(--main-color);
+}
+ */
+/* header .follow a {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0 0.7rem;
+}
+
+header .follow a:hover {
+  color: var(--main-color);
+} */
